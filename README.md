@@ -1,18 +1,18 @@
 # Fetched-reward-reciept-processor-challenge
 This project is a take home exercise for the company fetched where given a receipt calculate the amount of points the receipt earns and build a webservice that generates an ID for each receipt and stores the calculates points for the receipt
 
-##Features
+## Features
 -Submit receipts via a POST /receipts/process endpoint.
 -Retrieve points for a submitted receipt via a GET /receipts/{id}/points endpoint.
 -In-memory storage (no database required).
 -Docker support for easy deployment.
 
-##Prerequisites
+## Prerequisites
 -[Go 1.19+](https://go.dev/doc/install)
 -[Docker](https://docs.docker.com/desktop/)
 
-##Installation & Setup
-###Running Locally
+## Installation & Setup
+### Running Locally
 1. Clone the repository:
    ```
    git clone <repository_url>
@@ -29,7 +29,7 @@ This project is a take home exercise for the company fetched where given a recei
    ```
 4. The service will start on http://localhost:8080.
 
-###Running with Docker
+### Running with Docker
 1. Build the Docker image:
    ```
    docker build -t receipt-processor .
@@ -40,8 +40,8 @@ This project is a take home exercise for the company fetched where given a recei
    ```
 3. The service will be accessible at http://localhost:8080.
 
-##API Usage
-#rest of readme to be finished
+## API Usage
+# rest of readme to be finished
 
 
 

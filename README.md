@@ -1,5 +1,5 @@
 # Fetched-reward-reciept-processor-challenge
-This project is a take home exercise for the company fetched where given a receipt calculate the amount of points the receipt earns and build a webservice that generates an ID for each receipt and stores the calculates points for the receipt
+This project is a take home exercise for the company fetched where given a receipt calculate the amount of points the receipt earns and build a webservice that generates an ID for each receipt and stores the calculated points for the receipt
 
 ## Features
 - Submit receipts via a POST /receipts/process endpoint.
@@ -12,6 +12,15 @@ This project is a take home exercise for the company fetched where given a recei
 - [Docker](https://docs.docker.com/desktop/)
 
 ## Installation & Setup
+### Installing Linux
+Before running any commands or going through any files make sure you have linux setup or a linux terminal as all the commands being run are linux based if you want to setup linux on your terminal there are these commands you follow to setup linux
+```
+wsl --install
+```
+after installing linux you can run this next command to start using linux on your terminal
+```
+bash
+```
 ### Running Locally
 1. Clone the repository:
    ```

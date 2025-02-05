@@ -137,9 +137,37 @@ If you encounter issues running the service:
    ```
    docker run --rm -it receipt-processor /bin/sh
    ```
+## Testing 
+### Submitting Receipt
+1. Submitting JSON content, which then returns an ID for the submitted receipt.
+   ```
+   curl -X POST "http://localhost:8080/receipts/process" \
+     -H "Content-Type: application/json" \
+     -d '{
+    "retailer": "Target",
+    "purchaseDate": "2022-01-01",
+    "purchaseTime": "13:01",
+    "items": [
+      {
+        "shortDescription": "Mountain Dew 12PK",
+        "price": "6.49"
+      }
+    ],
+    "total": "6.49"
+     }'
+   ```
+2. Submitting A JSON file, which then returns an ID for the submitted receipt.
+   ```
+   curl -X POST "http://localhost:8080/receipts/process" \
+     -H "Content-Type: application/json" \
+     -d @receipt.json
+   ```
+### Retreive Points
+1. After Submitting the Receipt an ID returned for that receipt, with the given ID change the text id in the brackets to the given ID to get that receipt's points earned .
+   ```
+   curl -X GET "http://localhost:8080/receipts/{id}/points"
 
-
-
+   ```
 
 
 
